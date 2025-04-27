@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kalkulator Sederhana</title>
+  <link rel="stylesheet" href="kalkulator.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="banner">
+      <img src="https://lh5.googleusercontent.com/TAns9f9xS3hk_dr18fn3yCFQWMkzopAgS7qocoqgjnh8ws54OWHDrvWVC7p0-OTKMls-u7MD_udrN7T6RCPmh9YzotNvMOsdGvFlPYD6C-SdKXMTeAIUKsmTZN7IJ-45rhNjubpzxGJuO-HfRHR2x0E" alt="Iklan Kiri" />
+    </div>
+
+    <div class="calculator">
+      <input type="text" id="display" disabled />
+      <div class="buttons">
+        <button onclick="clearDisplay()">C</button>
+        <button onclick="deleteLast()">⌫</button>
+        <button onclick="append('%')">%</button>
+        <button onclick="append('/')">/</button>
+
+        <button onclick="append('7')">7</button>
+        <button onclick="append('8')">8</button>
+        <button onclick="append('9')">9</button>
+        <button onclick="append('*')">×</button>
+
+        <button onclick="append('4')">4</button>
+        <button onclick="append('5')">5</button>
+        <button onclick="append('6')">6</button>
+        <button onclick="append('-')">-</button>
+
+        <button onclick="append('1')">1</button>
+        <button onclick="append('2')">2</button>
+        <button onclick="append('3')">3</button>
+        <button onclick="append('+')">+</button>
+
+        <button onclick="append('0')">0</button>
+        <button onclick="append('.')">.</button>
+        <button onclick="calculate()">=</button>
+      </div>
+    </div>
+
+    <div class="banner">
+      <img src="https://lh5.googleusercontent.com/TAns9f9xS3hk_dr18fn3yCFQWMkzopAgS7qocoqgjnh8ws54OWHDrvWVC7p0-OTKMls-u7MD_udrN7T6RCPmh9YzotNvMOsdGvFlPYD6C-SdKXMTeAIUKsmTZN7IJ-45rhNjubpzxGJuO-HfRHR2x0E" alt="Iklan Kanan" />
+    </div>
+  </div>
+
+  <script src="kalkulator.js"></script>
+</body>
+</html>
